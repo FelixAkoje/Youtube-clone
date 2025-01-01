@@ -1,0 +1,139 @@
+  
+  .thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+
+  }
+  
+
+
+
+.thumbnail {
+  width: 100%;
+ 
+}
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+
+.channel-picture
+ {
+  width: 36px;
+  border-radius: 50px;
+}
+
+.channel-tooltip-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 6px;
+}
+
+.channel-tooltip-name {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.channel-tooltip-stats {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+.channel-picture-containers{
+  position: relative;
+  display: inline-block;
+}
+
+
+.channel-tooltip {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  align-items: center;
+  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 200;
+  transition: opacity 0.15s;
+}
+
+.channel-picture-containers:hover .channel-tooltip {
+  opacity: 1;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 245px;
+  line-height: 20px;
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.video-author,
+.video-stats {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-info {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 10px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
